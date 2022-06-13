@@ -1,0 +1,36 @@
+
+.nav-item{
+    padding-left: 20px;
+}
+
+.offcanvas-body{
+    margin-right: 80px;
+    font-size: 20px;
+}
+.navbar-brand{
+    margin-left: 80px;
+    font-family: 'Dancing Script',cursive;
+    font-size: 40px;
+}
+.offcanvas-title{
+    font-family: 'Dancing Script',cursive;
+    font-size: 25px;
+}
+.intro{
+    height: 90vh;
+    padding: 10% 0 0 80px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(211, 198, 198, 0.881);
+}
+.intro h1{
+    font-size: 64px;
+    
+}
+@media (max-width:992px){
+    .navbar-brand{
+        margin-left: 5px;
+    }
+    .offcanvas-body{
+        margin-right: 0px;
+    }
+}
