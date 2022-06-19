@@ -1,3 +1,6 @@
+.bg-black{
+    background-color: #06283D !important;
+}
 
 .nav-item{
     padding-left: 20px;
@@ -19,15 +22,42 @@
     font-family: 'Dancing Script',cursive;
     font-size: 25px;
 }
+.home{
+    height: 100%;
+}
 .intro{
     padding-top: 10%;
-    height: 90vh;
     font-family: 'Poppins', sans-serif;
     color: rgba(211, 198, 198, 0.881);
 }
-.intro h1{
-    font-size: 64px;
-    
+.intro h1,.intro span{
+    font-size: 64px; 
+}
+.intro p{
+    font-size: 20px;
+}
+.intro span{
+    color: #fff;
+}
+.topic{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s linear ease-out;
+}
+.topic:hover{
+    color: #fff;
+    text-decoration: underline #1363DF;
+
+}
+.logoBox{
+    height: 220px;
+    background-color: #06283D;
+    color: #DFF6FF;
+}
+.logoBox >i{
+    padding: 10px 0;
+    color: #1363DF;
+    font-size: 60px;
 }
 
 @media (max-width:992px){
@@ -36,5 +66,17 @@
     }
     .offcanvas-body{
         margin-right: 0px;
+    }
+}
+@media (max-width:556px){
+    .intro h1,.intro span{
+        font-size: 40px;
+    }
+    .home{
+        height: 88vh;
+        overflow: hidden;
+    }
+    .character{
+        padding: 30px 0px 5px 0;
     }
 }
