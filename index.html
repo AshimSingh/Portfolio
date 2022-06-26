@@ -16,7 +16,7 @@
 <body>
     <section class="header" id="header">
         
-            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-black">
                 <div class="container-fluid">
                     <a class="navbar-brand"  href="#">Ashim Singh</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
@@ -34,18 +34,17 @@
                               <a class="nav-link active" href="#">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="#">Blog</a>
+                              <a class="nav-link" href="#">Work</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Work</a>
+                            <a class="nav-link" href="#">Blog</a>
                         </li>
                           <li class="nav-item">
                               <a class="nav-link" href="#">Connect</a>
                           </li>
-      
                       </ul>
                       </div>
                     </div>
@@ -53,7 +52,7 @@
         </div>
         </nav>
     </section>
-    <section class="home bg-black">
+    <section class="home bg-black pt-3 mt-5">
         <div class="container-fluid title">
             <div class="row">
                 <div class="intro col-md-6 order-lg-1 order-sm-2 order-2">
@@ -71,7 +70,7 @@
                 <!-- <div class="col-md-6 character">
                     <img src="img/character.png">
             </div> -->
-            <div class="character card img-fluid bg-black pt-md-5 justify-content-center align-content-start order-lg-2 order-sm-1 order-1" style="width:500px;">
+            <div class="character card img-fluid bg-black  pt-lg-5 pt-md-5 d-flex justify-content-center align-content-start order-lg-2 order-sm-1 order-1" style="width:500px;">
                 <img src="img/character.png" alt="character" width="100%">
             
             </div>
@@ -79,7 +78,7 @@
             
         </div>
     </section>
-    <section class="about bg-black">
+    <section class="about pt-5 bg-black" id="about">
         <div class="container p-4 bg-black text-center">
             
                     <div class="top p-4"><a class="topic" href="#header"><h1>About</h1></a></div>
@@ -147,7 +146,7 @@
                 <div class="skills col-md-6 d-flex flex-column align-items-center">
                     <h3>Skills</h3>
                     <ul>
-                        <div class="bar mt-2 mb-2">
+                        <div class="bar mt-3 mb-3">
                             <div class="fill" style="width:80%;">
                                 <div class="skill text-center">
                                     CSS
@@ -155,7 +154,7 @@
                             </div>
     
                         </div>
-                        <div class="bar mt-2 mb-2">
+                        <div class="bar mt-3 mb-3">
                             <div class="fill" style="width:90%;">
                                 <div class="skill text-center">
                                     HTML
@@ -163,7 +162,7 @@
                             </div>
     
                         </div>
-                        <div class="bar mt-2 mb-2">
+                        <div class="bar mt-3 mb-3">
                             <div class="fill" style="width:75%;">
                                 <div class="skill text-center">
                                     JavaScript
@@ -171,7 +170,7 @@
                             </div>
     
                         </div>
-                        <div class="bar mt-2 mb-2">
+                        <div class="bar mt-3 mb-3">
                             <div class="fill" style="width:65%;">
                                 <div class="skill text-center">
                                     UI/UX
@@ -179,7 +178,7 @@
                             </div>
     
                         </div>
-                        <div class="bar mt-2 mb-2">
+                        <div class="bar mt-3 mb-3">
                             <div class="fill" style="width:50%;">
                                 <div class="skill text-center">
                                     Photoshop
@@ -187,7 +186,7 @@
                             </div>
     
                         </div>
-                        <div class="bar mt-2 mb-2">
+                        <div class="bar mt-3 mb-3">
                             <div class="fill" style="width:80%;">
                                 <div class="skill text-center">
                                     Bootstrap
@@ -195,7 +194,7 @@
                             </div>
     
                         </div>
-                        <div class="bar mt-2 mb-2">
+                        <div class="bar mt-3 mb-3">
                             <div class="fill" style="width:80%;">
                                 <div class="skill text-center">
                                     React Js
@@ -203,7 +202,7 @@
                             </div>
     
                         </div>
-                        <div class="bar mt-2 mb-2">
+                        <div class="bar mt-3 mb-3">
                             <div class="fill" style="width:60%;">
                                 <div class="skill text-center">
                                     Django
@@ -211,7 +210,7 @@
                             </div>
     
                         </div>
-                        <div class="bar mt-2 mb-2">
+                        <div class="bar mt-3 mb-3">
                             <div class="fill" style="width:60%;">
                                 <div class="skill text-center">
                                     Python
@@ -225,8 +224,21 @@
 
         </div>
     </section>
+    <section class="work">
+
+    </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
      <script src="index.js"></script>
+     <script>
+        const navbtn = document.querySelectorAll(".nav-link")
+        for(let i=0;i<navbtn.length;i++){
+            navbtn[i].addEventListener("click",function(){
+            let currentBtn= document.querySelectorAll('.active');
+            currentBtn[0].className=currentBtn[0].className.replace('active','');
+            this.className += ' active';
+            })
+        }
+     </script>
 </body>
 </html>
