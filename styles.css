@@ -1,7 +1,11 @@
 .bg-black{
     background-color: #06283D !important;
 }
-
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #06283D;
+}
 .nav-item{
     padding-left: 20px;
 }
@@ -95,7 +99,30 @@
     color: #DFF6FF;
     font-weight: 600;
 }
-
+/* work */
+.workCard{
+    color: #DFF6FF;
+    background-color: #0a4d77;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid #DFF6FF;
+    margin: 20px 10px;
+}
+.workCard:hover{
+    transform: scale(1.08,1.08);
+    box-shadow: 10px 10px 2px 3px #2785c0ec;
+}
+.workCard p{
+    font-size: 16px;
+    color: rgb(115, 105, 105);
+}
+.workCard >img{
+    height: 150px;
+    min-height: 180px;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px
+} 
 
 
 
