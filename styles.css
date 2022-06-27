@@ -18,7 +18,7 @@ body{
     padding: 0 15%;
 }
 .navbar-brand{
-    padding-left: 3%;
+    padding-left: 15%;
     font-family: 'Dancing Script',cursive;
     font-size: 40px;
 }
@@ -113,6 +113,10 @@ body{
     transform: scale(1.08,1.08);
     box-shadow: 10px 10px 2px 3px #2785c0ec;
 }
+a{
+    text-decoration: none;
+    color:  #DFF6FF;
+}
 .workCard p{
     font-size: 16px;
     color: rgb(115, 105, 105);
@@ -124,6 +128,50 @@ body{
     border-top-right-radius:20px
 } 
 
+
+/* blog section */
+.blogSection{
+    padding: 20px 8%;
+}
+.blog{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.blogimg{
+    width: 50%;
+}
+.blogimg img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.blogDes{
+    margin-left: 20px;
+    color: #93b6ea;
+}
+.blogDes p{
+    font-size: 20px;
+}
+.blogDes a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.blog h1{
+    position: absolute;
+    left: 20px;
+    top:-40px;
+    font-size: 70px;
+    color: #c9cbce;
+    font-weight: 700;
+    z-index: -10;
+    
+}
 
 
 
