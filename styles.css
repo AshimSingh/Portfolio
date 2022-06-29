@@ -165,7 +165,7 @@ a{
 .blog h1{
     position: absolute;
     left: 20px;
-    top:-40px;
+    top:-55px;
     font-size: 70px;
     color: #c9cbce;
     font-weight: 700;
@@ -188,6 +188,16 @@ a{
     .bar{
         width: 100%;
     }
+    .blog{
+        display: flex;
+        flex-direction: column;
+    }
+    .blogimg{
+        width: 100%;
+    }
+    .blogDes{
+        margin-left: 0;
+    }
 }
 @media (max-width:556px){
     .intro h1,.intro span{
@@ -199,5 +209,16 @@ a{
     }
     .character{
         padding: 30px 0px 5px 0;
+    }
+    /* blog page */
+    .blog{
+        display: flex;
+        flex-direction: column;
+    }
+    .blogimg{
+        width: 100%;
+    }
+    .blogDes{
+        margin-left: 0;
     }
 }
