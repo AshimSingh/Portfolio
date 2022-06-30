@@ -205,6 +205,26 @@ a{
     width: 100%;
     min-height: 400px;
 }
+footer i{
+    font-size: 60px;
+    margin: 3%;
+    padding: 0px 20px;
+    color: #04c2c9;
+}
+.group,.copyright{
+    margin-left: 4%;
+}
+footer a{
+    text-decoration: none;
+
+}
+.copyright{
+    color: #fff;
+}
+.copyright span{
+    color: #04c2c9;
+}
+
 
 @media (max-width:992px){
     .navbar-brand{
@@ -276,5 +296,8 @@ a{
     .formBox input,.formBox textarea,.formBox button{
         width: 80%;
         padding: 5px 0;
+    }
+    .group,.copyright{
+        margin-left: 0;
     }
 }
