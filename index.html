@@ -16,7 +16,7 @@
 </head>
 <body>
     <section class="header" id="header">
-        
+
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-black">
                 <div class="container-fluid">
                     <a class="navbar-brand"  href="#">Ashim Singh</a>
@@ -223,6 +223,9 @@
             </div>
 
         </div>
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </section>
     <section class="work" id="work">
         <div class="top p-4 text-center"><a class="topic" href="#work"><h1>Work</h1></a></div>
@@ -251,7 +254,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <a href="https://ashimsingh.github.io/Password-generator/" target="_blank">
                         <div class="card pb-5 workCard">
-                            <img class="card-img-top" src="img/Password generator.png" alt="Card image cap">
+                            <img class="card-img-top" src="img/passwordgenerator.png" alt="Card image cap">
                             <div class="card-body">
                               <h5 class="card-title pt-3">Password-generator website that generates 4 unique password with at least one number and one character password length ranging from 1 to 15 using JavaScript.</h5>
                               <p class="card-text pt-4">March 2022</p>
@@ -399,6 +402,31 @@
             this.className += ' active';
             })
         }
+
+        let mybutton = document.getElementById("btn-back-to-top");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction();
+            };
+
+            function scrollFunction() {
+                if (
+                    document.body.scrollTop > 450 ||
+                    document.documentElement.scrollTop > 450
+                ) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            mybutton.addEventListener("click", backToTop);
+
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
      </script>
 </body>
 </html>

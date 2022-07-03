@@ -224,7 +224,13 @@ footer a{
 .copyright span{
     color: #04c2c9;
 }
-
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+}
 
 @media (max-width:992px){
     .navbar-brand{
